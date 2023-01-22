@@ -16,9 +16,8 @@ In order to train my model, I used the following reward scheme:
 
 For training the model, I would let the model play 16 games at a time with a 500 turn limit (I don't think this limit was actually used). During each game, I would use
 my model to calculate probabilities for moving in each direction (up, down, left, right). I would then randomly choose a direction using these probabilities, and I would
-take the gradient of the -log of the probability for the move chosen as described in the REINFORCE algorithm (watch video below for more info). I would record 
-these gradients at each step along with the reward received. After finishing a game, for each step taken, I would scale the corresponding gradient by a weighted 
-sum of all future rewards and then use this to update the parameters using gradient descent.
+take the gradient of the -log of the probability for the move chosen as described in the REINFORCE algorithm (watch video in "Sources" section below for more info). 
+I would record these gradients at each step along with the reward received. After finishing a game, for each step taken, I would scale the corresponding gradient by a weighted sum of all future rewards and use this to update the parameters with gradient descent.
 
 ## Reinforcement Learning Implentation Details
 The information given to my model was a 6x6 grid of the game instead of the raw pixel values of the screen. This was done in an attempt to promote faster convergence, 

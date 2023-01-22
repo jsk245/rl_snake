@@ -8,7 +8,7 @@ Use `python play.py`to play the game on your own!
 ## Reinforcement Learning Policy Gradient Details
 My model uses the policy gradient reinforcement learning technique, meaning that I optimize the policy that the model follows for how to choose moves. 
 In order to train my model, I used the following reward scheme:
-- +10 points for eating a fruit (later, I introduced a 50 point reward for eating )
+- +10 points for eating a fruit (later, I introduced a 50 point reward for eating more than 7 fruit)
 - -1 point for dying
 - +.1 points for moving towards the fruit (later turned down to -.025 to stop the snake from looping)
 - -.1 points for moving away from the fruit

@@ -1,4 +1,6 @@
 # Reinforcement Learning Snake
+<img src="https://user-images.githubusercontent.com/93054906/213898739-2059d754-3879-4069-8db6-5c4817ceb585.gif" width="272" height="153">
+
 ## Game Description
 Snake is a one-player game where you control a "snake" using the arrow keys. The goal is to pick up "fruits", which increase the length of the snake. In this repo, I include
 a playable version of the game as well as a way to train a model to play snake using reinforcement learning (on a smaller board). Video results from training the model
@@ -40,6 +42,9 @@ Here are some miscellaneous implentation details:
 - I didn't use a set number of episodes since I just let my model train until I hit Colab runtime limits
 - I used the Adam optimizer
 - I used a discount factor of .99
+
+## Training Notes
+I would try using a higher learning rate in the future because this model took a lot longer to train than I initially thought. Additionally, I think adjusting the reward policy would probably help the snake learn the endgame better. For my results below, I initially made the fruit add 3 extra blocks to the snake instead of one, so that is why the snake sometimes avoids taking a fruit that it should be easy to get. Furthermore, this means I essentially trained on a different version of snake for half the time, which is why the results aren't as polished. I am currently in the process of retraining the model for better results.
 
 ## Results
 Here is about 30-60 seconds of footage from an untrained model (top), a partially trained model (middle), and my fully trained model (bottom). One thing that's particularly

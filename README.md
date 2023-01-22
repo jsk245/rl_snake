@@ -32,7 +32,7 @@ with the hope being that I would require a smaller model to train. On the grid, 
 I then passed this grid through 3 convolutional layers, each with 3x3 kernels, strides of 1, padding, and 32 channels. Each convolution was followed by LayerNorms (for 
 smoother gradients) and ReLU activations. After this, I used max pooling with 2x2 kernels, strides of 2, and no padding to decrease the size of the output of the 
 convolutional layers. I then flattened the output and used a simply linear layer that outputted 4 numbers, which I transformed into probabilities using the Softmax
-function.
+function, which were used as the probabilities for moving in each direction.
 
 Here are some miscellaneous implentation details:
 - I started with a learning rate of 5e-5 and eventually decreased it to 5e-6

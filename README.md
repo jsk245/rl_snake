@@ -44,7 +44,7 @@ Here are some miscellaneous implentation details:
 - I used a discount factor of .99
 
 ## Training Notes
-I would try using a higher learning rate in the future because this model took a lot longer to train than I initially thought. Additionally, I think adjusting the reward policy would probably help the snake learn the endgame better. For my results below, I initially made the fruit add 3 extra blocks to the snake instead of one, so that is why the snake sometimes avoids taking a fruit that it should be easy to get. Furthermore, this means I essentially trained on a different version of snake for half the time, which is why the results aren't as polished. I am currently in the process of retraining the model for better results.
+I would try using a higher learning rate in the future because this model took a lot longer to train than I initially thought. Additionally, I think adjusting the reward policy would probably help the snake learn the endgame better. For my results below, I initially made the fruit add 3 extra blocks to the snake instead of one, so that is why the snake sometimes avoids taking a fruit that should be easy to get. Furthermore, this means I essentially trained on a different version of snake for half the time, which is why the results aren't as polished. I am currently in the process of retraining the model for better results.
 
 ## Results
 Here is about 30-60 seconds of footage from an untrained model (top), a partially trained model (middle), and my fully trained model (bottom). One thing that's particularly

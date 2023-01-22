@@ -31,7 +31,7 @@ with the hope being that I would require a smaller model to train. On the grid, 
 
 I then passed this grid through 3 convolutional layers, each with 3x3 kernels, strides of 1, padding, and 32 channels. Each convolution was followed by LayerNorms (for 
 smoother gradients) and ReLU activations. After this, I used max pooling with 2x2 kernels, strides of 2, and no padding to decrease the size of the output of the 
-convolutional layers. I then flattened the output and used a simply linear layer that outputted 4 numbers, which I transformed into probabilities using the Softmax
+convolutional layers. I then flattened the output and used a simple linear layer that outputted 4 numbers, which I transformed into probabilities using the Softmax
 function, which were used as the probabilities for moving in each direction.
 
 Here are some miscellaneous implentation details:
@@ -39,6 +39,7 @@ Here are some miscellaneous implentation details:
 - I used batches of size 16
 - I didn't use a set number of episodes since I just let my model train until I hit Colab runtime limits
 - I used the Adam optimizer
+- I used a discount factor of .99
 
 ## Results
 Here is about 30-60 seconds of footage from an untrained model (top), a partially trained model (middle), and my fully trained model (bottom). One thing that's particularly

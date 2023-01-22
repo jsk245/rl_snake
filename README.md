@@ -41,7 +41,8 @@ Here are some miscellaneous implentation details:
 - I used the Adam optimizer
 
 ## Results
-Here is about 30-60 seconds of footage from an untrained model (top), a partially trained model (middle), and my fully trained model (bottom).
+Here is about 30-60 seconds of footage from an untrained model (top), a partially trained model (middle), and my fully trained model (bottom). One thing that's particularly
+interesting is that even though there is a penalty for all movement, the model on the bottom still learned to postpone eating the fruit immediately to avoid trapping itself.
 
 <img src="https://user-images.githubusercontent.com/93054906/213898733-bf6ed8f2-34cd-4c7c-a8c1-d2b8932d0106.gif" width="150" height="150">
 
